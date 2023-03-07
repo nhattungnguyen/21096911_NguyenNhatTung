@@ -25,21 +25,65 @@
     div.one {
         background-color: bisque;
         width: 850px; 
-        margin: auto;
         padding-left: 50px;
         padding-right: 50px;
         padding-top: 60px;
         padding-bottom: 50px;
         border: solid 3px black;
+        margin-left: 250px;
 
     }
+    table.bai4 {
+        font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+        background-color: #993738;
+    }
+    #chan td {
+        background-color: gray;
+    }
+    #le {
+        background-color: white;
 
+    }
+    #chan td:last-child{
+        text-align: right;
+    }
+    #le td:last-child {
+        text-align: right;
+    }
+    #img {
+        background-image: url();
+        background-position: right bottom, left top;
+        background-repeat: no-repeat, repeat;
+    }
+    .container, .row {
+        width: 900px;
+        padding-bottom: 170px ;
+    }
+    .row:before. .row:after {
+        display: table;
+        content: "";
+    }
+    .col1, .col2, .col3 {
+        float: left;
+        width:  25.333333333%;
+        margin: 1%;
+        padding: 1%;
+    }
+    .newspaper {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-rule-gap: 40px;
+        -moz-column-gap: 40px;
+        column-gap: 40px;
+        -
+    }
 </style>
 <body>
     <h1>Bai10</h1>
     <p></p>
     <p></p>
-    
+
     <div class = "one">
         <details open>
             <summary>FIT</summary>
@@ -493,7 +537,316 @@
     <div class = "one">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/wmHU9V2CQAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+    <p></p>
+    <h1>TUAN 3 4 5</h1>
+    <h2>Chuong 3: Casading Style Sheet (CSS)</h2>
+    <p></p>
+    <h1>Bai1</h1>
+    <div class="one">
+        <div id = "container" style="width: 500px; height: 300px; background-color: gray;">
+            <h1>A simple div element.</h1>
+        </div>
+        <p style="text-indent: 1cm; color: red; text-align: justify;">
+            Thiết lập chế độ thụt đầu dòng cho 1 đoạn văn bản. Thuộc tính này có thể gán giá trị là tỉ lệ % hoặc một số cụ thể. Thiết lập chế độ thụt đầu dòng cho 1 đoạn văn bản. Thuộc tính này có thể gán giá trị là tỉ lệ % hoặc một số cụ thể.
+        </p>
+        <p style="text-align: right; color: blue;">
+            Thuộc tính text-align: right; dùng để canh lề phải đoạn văn bản.
+        </p>
+        <p style="text-align: center; color: green;">
+            Thuộc tính text-align: center; dùng để canh giữa lề đoạn văn bản.
+        </p>
+        <p style="text-align: left; color: brown;">
+            Thuộc tính text-align; dùng để canh giữa lề đoạn văn bản.
+        </p>
+        <p style="text-decoration: underline; color: pink;">
+            Thuộc tính text-decoration underline; sẽ gạch dưới đoạn văn bản.
+        </p>
+        <p style="text-decoration: line-through; color: purple;">
+            Thuộc tính text-decoration: line-through; sẽ gạch ngang đoạn văn bản.
+        </p>
+        <p style="text-decoration: overline; color: red;">
+            Thuộc tính text-decoration: overline; sẽ gạch trên đoạn văn bản. 
+        </p>
+        <p style="text-decoration: blink; text-align: justify; color: blue; text-shadow: 4px 4px 8px blue;">
+            Thuộc tính text-decoration: blink; sẽ tạo hiệu ứng blink cho đoạn văn bản + thuộc tính text-shadow: 4px 4px 8px blue; tạo bóng cho chữ.
+        </p>
+    </div>
+        <h2>b.</h2>
+    <div class ="one">
+        <div style="width: 500px;">
+            <div style="border: solid 1px violet;">
+                <table>
+                    <tr>
+                        <td>
+                            <h1 style="color: brown; text-shadow: 5px 5px 3px red, -5px -5px 3px white; text-align: left; padding: 20px ;"> Colorful</h1>
+                        </td>
+                        <td>
+                            <div style="background-color: gray;">
+                                <h1 style="text-align: center; color: aqua;">Inset Effect</h1>
+                            </div>
+                        </td>
+                        <td>
+                            <h1 style="te"></h1>
+                        </td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+            </div>
+            <div style="background-color: violet;">
+                <p style="color: white; text-align: center; font-family: 'Courier New', Courier, monospace; text-size-adjust: 4px;">
+                    Cool CSS Text Effects
+                </p>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <h1>Bai 3</h1>
+    <p></p>
+    <div class="one">
+        <table style="border: solid white;">
+            <colgroup>
+                <col span ="2" style="background-color: blue;">
+                <col style = "background-color: green;">
+                <col span = "2" style="background-color: pink;">
+            </colgroup>
+            <tr style="background-color: pink;">
+                <th text-align: center;"><p">Transaction date</p></th>
+                <th text-align: center;"><p">Payment type and details</p></th>
+                <th text-align: center;"><p">Paid out</p></th>
+                <th text-align: center;"><p">Paid in</p></th>
+                <th text-align: center;"><p">Balance</p></th>
+            </tr>    
+            <tr>
+                <td>12 Jun 09</td>
+                <td>Amazon.com</td>
+                <td>$49.99</td>
+                <td></td>
+                <td>$8411.16</td>
+            </tr>
+            <tr>
+                <td>13 Jun 09</td>
+                <td>Total</td>
+                <td>$60.00</td>
+                <td></td>
+                <td>$8351.16</td>
+            </tr>
+            <tr>
+                <td>14 Jun 09</td>
+                <td>Whole Foods</td>
+                <td>$75.28</td>
+                <td></td>
+                <td>$8275.88</td>
+            </tr>
+            <tr>
+                <td>15 Jun 09</td>
+                <td>Visa Payment</td>
+                <td>$35000</td>
+                <td></td>
+                <td>$7925.88</td>
+            </tr>
+            <tr>
+                <td>17 Jun 09</td>
+                <td>Murco</td>
+                <td>$60.00</td>
+                <td></td>
+                <td>9315.88</td>
+            </tr>
+            <tr>
+                <td>18 Jun 09</td>
+                <td>Wrox Press</td>
+                <td></td>
+                <td>$1000.00</td>
+                <td>$10315.88</td>
+            </tr>
+            <tr>
+                <td>18 Jun 09</td>
+                <td>McLellans Bakery</td>
+                <td>$25.00</td>
+                <td></td>
+                <td>$10290.88</td>
+            </tr>
+            <tr>
+                <td>18 Jun 09</td>
+                <td>Apple Store</td>
+                <td>$1350.00</td>
+                <td></td>
+                <td>$8940.88</td>
+            </tr>
+            <tr style="background-color: pink;">
+                <td></td>
+                <td></td>
+                <td>$1970.27</td>
+                <td>$2450.00</td>
+                <td>$8940.88</td>
+            </tr>
+        </table>
+        <p></p>
+        <p></p>
+        <p></p>
+        <table style="border: solid white;">
+            <colgroup>
+                <col span ="5" style="background-color: white;">
+            </colgroup>
+            <tr style="background-color: pink;">
+                <th text-align: center;"><p">Transaction date</p></th>
+                <th text-align: center;"><p">Payment type and details</p></th>
+                <th text-align: center;"><p">Paid out</p></th>
+                <th text-align: center;"><p">Paid in</p></th>
+                <th text-align: center;"><p">Balance</p></th>
+            </tr>    
+            <tr>
+                <td>12 Jun 09</td>
+                <td>Amazon.com</td>
+                <td>$49.99</td>
+                <td></td>
+                <td>$8411.16</td>
+            </tr>
+            <tr>
+                <td>13 Jun 09</td>
+                <td>Total</td>
+                <td>$60.00</td>
+                <td></td>
+                <td>$8351.16</td>
+            </tr>
+            <tr>
+                <td>14 Jun 09</td>
+                <td>Whole Foods</td>
+                <td>$75.28</td>
+                <td></td>
+                <td>$8275.88</td>
+            </tr>
+            <tr>
+                <td>15 Jun 09</td>
+                <td>Visa Payment</td>
+                <td>$35000</td>
+                <td></td>
+                <td>$7925.88</td>
+            </tr>
+            <tr>
+                <td>17 Jun 09</td>
+                <td>Murco</td>
+                <td>$60.00</td>
+                <td></td>
+                <td>9315.88</td>
+            </tr>
+            <tr>
+                <td>18 Jun 09</td>
+                <td>Wrox Press</td>
+                <td></td>
+                <td>$1000.00</td>
+                <td>$10315.88</td>
+            </tr>
+            <tr>
+                <td>18 Jun 09</td>
+                <td>McLellans Bakery</td>
+                <td>$25.00</td>
+                <td></td>
+                <td>$10290.88</td>
+            </tr>
+            <tr>
+                <td>18 Jun 09</td>
+                <td>Apple Store</td>
+                <td>$1350.00</td>
+                <td></td>
+                <td>$8940.88</td>
+            </tr>
+            <tr style="background-color: pink;">
+                <td></td>
+                <td></td>
+                <td>$1970.27</td>
+                <td>$2450.00</td>
+                <td>$8940.88</td>
+            </tr>
+        </table>
+    </div>
+    <p></p>
+    <p></p>
+    <h1>Bai 4</h1>
+    <p></p>
+    <p></p>
+    <div class="one">
+        <div style="width: 450px; height: 300px; padding-left: 280px;">
+            <h2 style="padding-left: 50px;">Exercise example</h2>
+            <p></p>
+            <table class = "bai4">
+                <tr>
+                    <th style="color: white;">Region</th>
+                    <th style="color: white;">Percentage</th>
+                </tr>
+                <tr id="chan">
+                    <td>New Enland</td>
+                    <td>12%</td>
+                </tr>
+                <tr id="le">
+                    <td>Mid-Alantic</td>
+                    <td>19%</td>
+                </tr>
+                <tr id="chan">
+                    <td>South and Puerto Rico</td>
+                    <td>15%</td>
+                </tr>
+                <tr id="le">
+                    <td>Midwest and Plains States</td>
+                    <td>12%</td>
+                </tr>
+                <tr id ="chan">
+                    <td>Southwest and Mountain</td>
+                    <td>10%</td>
+                </tr>
+                <tr id="le">
+                    <td>West, Alaska, and Hawaii</td>
+                    <td>20%</td>
+                </tr>
+                <tr id="chan">
+                    <td>Abroad</td>
+                    <td>13%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <p></p>
+    <p></p>
+    <h1>Bai 5</h1>
+    <p></p>
+    <p></p>
+    <div class="one">
+
+    </div>
+    <p></p>
+    <p></p>
+    <h1>Bai 6</h1>
+    <p></p>
+    <p></p>
+    <div class="one">
+        <div class="container">
+            <div class="row">
+                <div class="col1">
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pagas and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML. SVG and XUL</p>
+                </div>
+                <div class="col2">
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pagas and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML. SVG and XUL</p>
+                </div>
+                <div class="col3">
+                    <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. Although most often used to change the style of web pagas and user interfaces written in HTML and XHTML, the language can be applied to any kind of XML document, including plain XML. SVG and XUL</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <p>Along with HTML and JavaScript. CSS is a cornerstone technolory used by most webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
+                </div>
+                <div class="col2">
+                    <p>Along with HTML and JavaScript. CSS is a cornerstone technolory used by most webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
+                </div>
+                <div class="col3">
+                    <p>Along with HTML and JavaScript. CSS is a cornerstone technolory used by most webpages, user interfaces for web applications, and user interfaces for many mobile applications.</p>
+                </div>
+            </div>
+           
+        </div>
+    </div>
     
- 
+    
 </body>
 </html>
