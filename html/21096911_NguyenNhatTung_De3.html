@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        .wrapper {
+            width: 960px;
+            height: 700px;
+            background-color: rgb(249, 243, 255);
+        }
+        header {
+            height: 85px;
+            width: 100%;
+            background-color: rgb(41,78,121);
+            position: relative;
+
+        }
+        .content {
+            background-color: #ffffff;
+            width: 960px;
+            height: 575px;
+        }
+        aside {
+            float: left;
+            background-color: rgb(255, 255, 255);
+            width: 70%;
+            height: 100%;
+        }
+        section {
+            background-color: rgb(255, 255, 255);
+            width: 30%;
+            height: 100%px;
+            float: left;
+
+        }
+        footer {
+            background-color: rgb(28,52,81);
+            width: 960px;
+            height: 40px;
+
+        }
+        #img1 {
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+        .p1 {
+            color: aqua;
+            top: 10px;
+            left: 80px;
+            size: 800px;
+            position: absolute;
+            font-size: 30px;
+        }
+        .p2 {
+            color: aqua;
+            top: 50px;
+            left: 80px;
+            size: 15px;
+            position: absolute;
+        }
+        #frm1 {
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            display: inline-flex;
+
+        }
+        #frm1 input:nth-child(1) {
+            background-color: rgb(41,78,121);
+            margin-right: 10px;
+            font-size: 15px;
+            
+        }
+        #frm1 input:nth-child(1)::placeholder {
+            color: white;
+        }
+        #frm1 input:nth-child(2) {
+            background-color: rgb(41,78,121);
+            color: white;
+        }
+        .top-menu li {
+            width: 100px;
+            height: 45px;
+            position: absolute;
+            right: 200px;
+            top: 30px;
+            background-color: rgb(61,115,177) ;
+            list-style: none;
+            text-decoration: none;
+            text-indent: 5px; 
+            display: inline-flexbox; 
+            line-height: 20px;
+             
+        }
+        .top-menu li:nth-child(1) {
+            top: 40px;
+            left: 30px;
+            text-align: center;
+        }
+        .top-menu li:nth-child(2) {
+            top: 40px;
+            left: 250px;
+        }
+        .top-menu li:nth-child(3) {
+            top: 40px;
+            left: 470px;
+        }
+        .top-menu li:nth-child(4) {
+            top: 40px;
+            left: 675px;
+        }
+        .top-menu li:nth-child(5) {
+            top: 40px;
+            left: 785px;
+        }
+        li:nth-child(1) a{
+            position: relative;
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+            font-size: 20px; 
+            top: 10px;
+        }
+        li:nth-child(2) a{
+            position: relative;
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+            font-size: 20px; 
+            top: 10px;
+        }
+        li:nth-child(3) a{
+            position: relative;
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+            font-size: 20px; 
+            left: 15px;
+        }
+        li:nth-child(4) a{
+            position: relative;
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+            font-size: 20px;
+            left: 15px; 
+        }
+        li:nth-child(5) a{
+            position: relative;
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+            font-size: 20px; 
+            top: 10px;
+            left: 15px;
+        }
+        aside .a1 {
+            position: relative;
+            top: 30px;
+            left: 10px;
+        }
+        .a1 h2 {
+            color: red;
+            font-family: 'Times New Roman', Times, serif ;
+        }
+        aside .a2 {
+            position: relative;
+            top: 50px;
+            left: 10px;
+            width: 52%;
+            float: left;
+            flex-direction: column;
+        }
+        .a2top {
+            text-shadow: 5px 5px 5px rgb(176,215,176);
+            text-align: justify;
+        }
+        .a2bot {
+            position: relative;
+            top: 20px;
+        }
+        aside .a3 {
+            position: relative;
+            width: 293px;
+            top: 50px;
+            left: 60px;
+            float: left;
+        }
+        .a3 h2 {
+            color: red;
+            font-family: 'Times New Roman', Times, serif ;
+        }
+        .a31 {
+            position: absolute;
+            top: 50px;
+            font-family: 'Times New Roman', Times, serif ;
+        }
+        .a32 {
+            position: absolute;
+            top: 200px;
+            font-family: 'Times New Roman', Times, serif ;
+        }
+        .a33 {
+            position: absolute;
+            top: 290px;
+            font-family: 'Times New Roman', Times, serif ;
+        }
+        section .s1 {
+            position: relative;
+            top: 20px;
+            width: 250px;
+            height: 400px;
+            background-color:  rgb(249,249,249);
+            padding: 10px;
+        }
+        .s1 h2 {
+            color: red;
+            font-family: 'Times New Roman', Times, serif ;
+        }
+      .fd1 {
+        position: absolute;
+        top: 670px;
+        left: 300px;
+      }
+       
+        
+        
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="../img/Hoa.PNG" alt="" id="img1">
+            <p class="p1">
+                FlowerBox 360 
+            </p>
+            <p class="p2">
+                ...to get your daily dose of luxury roes 
+            </p>
+            <form action="" id="frm1">
+                <input type="text" placeholder="Search the site...">
+                <input type="button" value="GO"> 
+            </form>
+            <ul class="top-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Promotion</a></li>
+                <li><a href="">Gift Baskets</a></li>
+                <li><a href="">Flower Services</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <aside>
+                <div class="a1">
+                    <h2>Why Not Contact Us Today</h2>
+                    <div>----------------------------------------------------------------------------------------------------------------------</div>
+                </div>
+                <div class="a2">
+                    <p class="a2top">
+                        For FlowerBox 360 shopper, that means not only can you send your friends and loved ones the highest quality flowers found on online, but that you can do so att a great value.
+                    </p>
+                    <div class="a2bot">
+                        <form action="">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <span>Name: </span><br>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <span>Email:</span>
+                                        <input type="text" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Telephone:</span>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        <span>Subject:</span>
+                                        <input type="text" name="" id="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span>Telephone:</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <textarea name="" id="" cols="44" rows="12"></textarea>
+                                    </td> 
+                                </tr>
+                            </table>
+                            <input type="submit" name="" id="">
+                            <input type="reset"></td>
+                        </form>
+                    </div>
+                </div>
+                <div class="a3">
+                    <h2>FlowerBox 360 Info!</h2>
+                    <div>-------------------------------------------</div>
+                    <div class="a31">
+                        <p>Openrating Hours:</p>
+                        <p>Monday-Friday: 9.00am-5.00pm.</p>
+                        <p>Saturday: Closed (No Deliveries)</p>
+                        <p>ORDER ONLINE 24/7</p>
+                    </div>
+                    <div class="a32">
+                        <p>Software Engineering Dept.</p>
+                        <p>Information technolory Falcuty</p>
+                        <p>First Floor, H Building</p>
+                    </div>
+                    <div class="a33">
+                        <p>12 Nguyen Van Bao St., Ward 4</p>
+                        <p>Go Vap District</p>
+                        <p>Ho Chi Minh city</p>
+                        <p>Tel: 02838940390</p>
+                        <p>Fax: 0283.9940 954</p> 
+                    </div>
+                </div>
+            </aside>
+            <section>
+                <div class="s1">
+                    <div>
+                        <h2>Discounts & Speacials</h2>
+                        <div>---------------------------------------------</div>
+                        <img src="../img/Hoahong.PNG" alt="">
+                        <div>
+                            <p>FlowerBox 360 offers many great discounts throughout the year, from coupons and counpin codes, to promo codes and other savings. We also offer military flower discounts to our wonderful troops!</p>
+                            <a href="" "><p style="text-align: right;"><b>Read More >></b></p></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+           <div class="fd1">
+            <p style="color:white;">Copyright © 2017 - All Rights Reserved -<span style="color:blue";> Software Engineering Department - Industrial University of Ho Chi Minh City</span></p>
+           </div>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
